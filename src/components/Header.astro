@@ -1,0 +1,15 @@
+---
+const links = [
+	{
+		name: 'Home',
+		path: '/'
+	},
+	{
+		name: 'List',
+		path: '/list'
+	}
+]
+---
+<header class="flex justify-between items-center px-10 py-3 bg-gray-300" >
+	{links.map((item) => (<a href={item.path}>{item.name}</a>))}
+</header>
