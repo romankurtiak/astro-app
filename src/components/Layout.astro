@@ -21,7 +21,7 @@ const { title, color } = Astro.props;
 		<title style="color: red;" >{title}</title>
 	</head>
 	<ViewTransitions />
-	<body style={{ backgroundColor: color }}>
+	<body style={{ backgroundColor: color }} class="flex-1 h-full">
 		<Header />
 		<slot />
 	</body>
@@ -39,7 +39,7 @@ const { title, color } = Astro.props;
 	html {
 		font-family: system-ui, sans-serif;
 		background: white;
-		background-size: 224px;
+		height: 100%;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
